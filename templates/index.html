@@ -8,6 +8,8 @@
     <title>Blake Leading</title>
 </head>
 <body>
+
+    <!-- HOME -->
     <section id="header">
         <div class="container">
             <img src="../static/logo.png" class="logo">
@@ -35,5 +37,167 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
+    <img src="../static/menu.png" id="menuBtn">
+
+<!-- ABOUT US -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="../static/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Beatae, vel natus?
+                     Laudantium temporibus minima quis perferendis
+                      repellat eaque ratione quo dolor nisi optio
+                       numquam a iure ipsa, maxime dicta est!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Fugit cum, delectus impedit aspernatur aliquam magni illum 
+                    autem amet molestias voluptas nostrum doloremque hic sit eum 
+                    deleniti ratione dolore officiis quas?</p><br><br>
+
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>    
+
+                <h2>"Fugit cum, delectus impedit aspernatur aliquam magni illum 
+                    autem amet doloremque hic sit eum"</h2>
+                <h3>-- Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="../static/pic-1.png">
+                <h4>Learn Anywhere</h4>
+                <p>ipsa, maxime dicta est!
+                    Lorem ipsum dolor sit, amet con</p>
+            </div>
+            <div class="feature-col">
+                <img src="../static/pic-2.png">
+                <h4>Expert Teachers</h4>
+                <p>delectus impedit aspernatur aliquam magni illum 
+                    autem amet molestias voluptas nostrum dolor</p>
+            </div>
+            <div class="feature-col">
+                <img src="../static/pic-3.png">
+                <h4>Unlimited Acsess</h4>
+                <p>Laudantium temporibus minima quis perferendis
+                    repellat eaque ratione quo dolor nisi optio</p>
+            </div>
+        </div>
+
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+
+    </section>
+
+
+     <!-- COURSES -->
+     <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse Our Top <br>courses</h1>
+                    <span class="square"></span>
+                    <p>Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Beatae, vel natus?
+                         Laudantium temporibus minima quis perferendis
+                          repellat eaque ratione quo dolor nisi optio
+                           numquam a iure ipsa, maxime dicta est!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Fugit cum.</p>
+                        <button class="common-btn">View All Courses</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="../static/course.png">
+            </div>
+        </div>
+     </section>
+
+
+<!-- OFFER -->
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="../static/offer.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Limitless learning,<br>limitless possibilities</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Beatae, vel natus?
+                    Laudantium temporibus minima quis perferendis
+                    repellat eaque ratione quo dolor nisi optio
+                    numquam a iure ipsa, maxime dicta est!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Fugit cum.</p>
+                <button class="common-btn">Start Free Trial</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- CONTACT -->
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to join our <br>learning community</h1>
+                <form action="">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <input type="password" placeholder="Enter Password">
+                    <div class="btn-box">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right-col">
+                <img src="../static/contact.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav")
+        
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
 </body>
 </html>
