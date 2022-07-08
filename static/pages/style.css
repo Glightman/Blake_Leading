@@ -226,3 +226,18 @@ form input{
     box-sizing: border-box;
     border: 2px solid #fab3c4;
 }
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+/*---- FOOTER ----*/
+
+#footer{
+    padding: 50px 0 30px;
+}
