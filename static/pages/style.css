@@ -289,3 +289,61 @@ hr{
 .copyright-text, .footer-logo{
     flex-basis: 40%;
 }
+
+/*---- SOCIAL ICONS ----*/
+
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 770px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    }
+    .header-text{
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn{
+        padding: 10px 16px;
+    }
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2{
+        font-size: 28px;
+    }
+}
