@@ -28,17 +28,17 @@ def send_email(name, email, phone):
     server.starttls()
     server.login(login, senha)
 
-    corpo = f'''
-    Nome: {name}
-    Email: {email}
-    Número de telefone: {phone}'''
-    email_msg = MIMEMultipart()
-    email_msg['From'] = login
-    email_msg['To'] = "matheusercolani@gmail.com"
-    email_msg['Subject'] = "Matheus você tem um novo cliente"
-    email_msg.attach(MIMEText(corpo, 'plain'))
+    # corpo = f'''
+    # Nome: {name}
+    # Email: {email}
+    # Número de telefone: {phone}'''
+    # email_msg = MIMEMultipart()
+    # email_msg['From'] = login
+    # email_msg['To'] = "rezbosa@gmail.com"
+    # email_msg['Subject'] = "Matheus você tem um novo cliente"
+    # email_msg.attach(MIMEText(corpo, 'plain'))
 
-    server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
+    # server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
 
     server.quit()
 
@@ -51,7 +51,7 @@ def index():
     nome_cliente = None
     if request.method =='POST':
         form = request.form
-        # send_email(form['nome'], form['email'], form['phone'])
+        send_email(form['nome'], form['email'], form['phone'])
         nome_cliente = form['nome']
     return render_template('index.html', nome_cliente = nome_cliente)
 
