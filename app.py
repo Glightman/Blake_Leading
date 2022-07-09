@@ -51,10 +51,12 @@ app = Flask(__name__)
 
 @app.route('/', methods = ('GET', 'POST'))
 def index():
+    nome_cliente = None
     if request.method =='POST':
         form = request.form
         send_email(form['nome'], form['email'], form['phone'])
-    return render_template('index.html')
+        nome_cliente = form['nome']
+    return render_template('index.html', nome_cliente = nome_cliente)
 
 if __name__ == '__main__':
     app.run(debug=True)
