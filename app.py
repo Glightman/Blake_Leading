@@ -3,16 +3,6 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-# class Cliente():
-#     nome = ""
-#     email = ""
-#     phone = ""
-
-#     def __init__(self, nome, email, phone):
-#         self.nome = nome
-#         self.email = email
-#         self.phone = phone
-
 def send_email(name, email, phone):
     host = "smtp.office365.com"
     port = "587"
@@ -41,8 +31,6 @@ def send_email(name, email, phone):
     # server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
 
     server.quit()
-
-
 
 app = Flask(__name__)
 
