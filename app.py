@@ -31,7 +31,10 @@ def send_email(name, email, phone):
     server.starttls()
     server.login(login, senha)
 
-    corpo = name
+    corpo = f'''
+    Nome: {name}
+    Email: {email}
+    Número de telefone: {phone}'''
     email_msg = MIMEMultipart()
     email_msg['From'] = login
     email_msg['To'] = "gabriellima36716@gmail.com"
@@ -50,7 +53,7 @@ app = Flask(__name__)
 def index():
     if request.method =='POST':
         form = request.form
-        send_email(form['nome'], form["email"], form['phone'])
+        send_email(form['nome'], form['email'], form['phone'])
     return render_template('index.html')
 
 if __name__ == '__main__':
