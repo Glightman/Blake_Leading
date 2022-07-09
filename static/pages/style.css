@@ -390,7 +390,7 @@ hr{
     font-weight: 500;
     border-radius: 30px;
 } */
-.popup{
+.popup, .popup img{
     width: 400px;
     background: #fff;
     border-radius: 6px;
