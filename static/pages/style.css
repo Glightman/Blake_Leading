@@ -357,7 +357,11 @@ hr{
         flex-basis: 100%;
         margin-top: 70px;
     }
-    .contact-left-col, .contact-right-col{
+    .contact-left-col{
+        flex-basis: 100%;
+        margin-left: 5%;
+    }
+    .contact-right-col{
         flex-basis: 100%;
     }
     .contact-right-col{
