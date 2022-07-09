@@ -6,15 +6,15 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-class Cliente():
-    nome = ""
-    email = ""
-    phone = ""
+# class Cliente():
+#     nome = ""
+#     email = ""
+#     phone = ""
 
-    def __init__(self, nome, email, phone):
-        self.nome = nome
-        self.email = email
-        self.phone = phone
+#     def __init__(self, nome, email, phone):
+#         self.nome = nome
+#         self.email = email
+#         self.phone = phone
 
 def send_email(name, email, phone):
     host = "smtp.office365.com"
@@ -31,10 +31,7 @@ def send_email(name, email, phone):
     server.starttls()
     server.login(login, senha)
 
-    corpo = '''
-    Nome: {cliente.name}
-    Email: {cliente.email}
-    Número de telefone: {cliente.phone}'''
+    corpo = name
     email_msg = MIMEMultipart()
     email_msg['From'] = login
     email_msg['To'] = "gabriellima36716@gmail.com"
@@ -51,10 +48,9 @@ app = Flask(__name__)
 
 @app.route('/', methods = ('GET', 'POST'))
 def index():
-    if request.method =='POST':
+    if request.methods =='POST':
         form = request.form
-        cliente = Cliente(form['nome'], form["email"], form['phone'])
-        send_email(cliente)
+        send_email(form['nome'], form["email"], form['phone'])
     return render_template('index.html')
 
 if __name__ == '__main__':
