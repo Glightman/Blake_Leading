@@ -48,7 +48,7 @@ app = Flask(__name__)
 
 @app.route('/', methods = ('GET', 'POST'))
 def index():
-    if request.methods =='POST':
+    if request.method =='POST':
         form = request.form
         send_email(form['nome'], form["email"], form['phone'])
     return render_template('index.html')
