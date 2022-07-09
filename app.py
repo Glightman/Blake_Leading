@@ -43,7 +43,7 @@ app = Flask(__name__)
 def index():
     if request.method =='POST':
         form = request.form
-        send_email(form('nome'), form('email'), form('phone'))
+        send_email(form['nome'], form["email"], form['phone'])
     return render_template('index.html')
 
 if __name__ == '__main__':
