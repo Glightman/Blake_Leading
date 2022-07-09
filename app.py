@@ -26,7 +26,7 @@ def send_email(name, email, phone):
     Número de telefone: {phone}'''
     email_msg = MIMEMultipart()
     email_msg['From'] = login
-    email_msg['To'] = "matheusercolani@gmail.com"
+    email_msg['To'] = "gabriellima36716@gmail.com"
     email_msg['Subject'] = "Matheus você tem um novo cliente"
     email_msg.attach(MIMEText(corpo, 'plain'))
 
