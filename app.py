@@ -1,7 +1,4 @@
-#AQUI NÓS IMPORTAMOS TODAS AS BIBLIOTECAS QUE VAMOS PRCISAR DURANTE O DESENVOLVIMENTO DO NOSSO PROJETO
-from crypt import methods
 from flask import (Flask, render_template, request)
-from http import server
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
