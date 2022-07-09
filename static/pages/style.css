@@ -380,3 +380,13 @@ hr{
     align-items: center;
     justify-content: center;
 }
+.btn{
+    padding: 10px ;
+    background:#fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
