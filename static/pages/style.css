@@ -208,6 +208,7 @@ nav ul li a{
     flex-wrap: wrap;
 }
 .contact-left-col, .contact-right-col{
+    margin-top: 100px;
     flex-basis: 50%;
 }
 .contact-right-col img{
@@ -229,7 +230,6 @@ form input{
 .btn-box{
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 .btn-box button{
     flex-basis: 48%;
