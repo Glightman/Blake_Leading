@@ -51,7 +51,7 @@ def index():
     nome_cliente = None
     if request.method =='POST':
         form = request.form
-        send_email(form['nome'], form['email'], form['phone'])
+        # send_email(form['nome'], form['email'], form['phone'])
         nome_cliente = form['nome']
     return render_template('index.html', nome_cliente = nome_cliente)
 
