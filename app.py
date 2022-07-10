@@ -18,15 +18,15 @@ def send_email(name, email, phone):
     server.starttls()
     server.login(login, senha)
 
-    # corpo = f'''
-    # Nome: {name}
-    # Email: {email}
-    # Número de telefone: {phone}'''
-    # email_msg = MIMEMultipart()
-    # email_msg['From'] = login
-    # email_msg['To'] = "rezbosa@gmail.com"
-    # email_msg['Subject'] = "Matheus você tem um novo cliente"
-    # email_msg.attach(MIMEText(corpo, 'plain'))
+    corpo = f'''
+    Nome: {name}
+    Email: {email}
+    Número de telefone: {phone}'''
+    email_msg = MIMEMultipart()
+    email_msg['From'] = login
+    email_msg['To'] = "rezbosa@gmail.com"
+    email_msg['Subject'] = "Matheus você tem um novo cliente"
+    email_msg.attach(MIMEText(corpo, 'plain'))
 
     # server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
 
