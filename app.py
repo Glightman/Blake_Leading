@@ -28,7 +28,7 @@ def send_email(name, email, phone):
     email_msg['Subject'] = "Matheus você tem um novo cliente"
     email_msg.attach(MIMEText(corpo, 'plain'))
 
-    # server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
+    server.sendmail(email_msg["From"], email_msg["To"], email_msg.as_string())
 
     server.quit()
 
